@@ -21,7 +21,7 @@ function initMap() {
   };
 
   var features = [
-    { position: { lat: 41.95, lng: -87.72 }, type: "gardencenter" },
+    { position: { lat: 41.95, lng: -87.72 }, type: "school front" },
   ];
 
   for (let i = 0; i < features.length; i++) {
