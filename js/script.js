@@ -12,11 +12,25 @@ function initMap() {
   var infowindow = new google.maps.InfoWindow({
     content: "This is where I go to school!",
   });
+  infowindow.open(map, marker);
 
+   const icons = {
+    gardencenter: {
+      icon: "media/garden_center_picture.jpg",
+    },
+  };
 
+  var features = [
+    { position: { lat: 41.95, lng: -87.72 }, type: "gardencenter" },
+  ];
 
+  for (let i = 0; i < features.length; i++) {
+    const marker = new google.maps.Marker({
+      position: features[i].position,
+      icon: icons[features[i].type].icon,
+      map: map,
+    });
+  }
+}
 
-
-
-  
 google.maps.event.addDomListener(window, 'load', initMap);
