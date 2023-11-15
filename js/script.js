@@ -2,26 +2,24 @@ var map;
 function initMap() {
 
   map = new google.maps.Map(document.getElementById('map'), {
-    //center: {lat: 41.6902, lng: 87.7176}, 
-    center: {lat: 41.6902, lng: 87.7176},
+    //center: {lat: 41.69030, lng: -87.71769}, 
+    center: {lat: 41.6902, lng: -87.7176},
     zoom: 15
   });
 
   var school = new google.maps.Marker({
-    position: { lat: 41.6902, lng: 87.7176},
+    position: { lat:  41.69030, lng: -87.71769},
     map: map
   });
 
   var Midway = new google.maps.Marker({
-    position: { lat: 28.2072, lng: 177.3735 },
+    position: { lat: 41.78699, lng: -87.75224 },
     map: map
   });
 
   var distPoints = [
-    { lat: 41.6902, lng: 87.7176 },
-    { lat: 28.2072, lng: 177.3735  },
-    { lat: 28.2072, lng: 177.3735  },
-    { lat: 28.2072, lng: 177.3735  },
+    { lat: 41.69030, lng: -87.71769},
+    { lat: 41.78699, lng: -87.75224  },
   ];
 
   var dist = new google.maps.Polyline({
