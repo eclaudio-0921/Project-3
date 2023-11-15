@@ -16,7 +16,7 @@ function initMap() {
 
    const icons = {
     gardencenter: {
-      icon: "media/garden_center_picture.jpg",
+      icon: "media/download.jpg",
     },
   };
 
