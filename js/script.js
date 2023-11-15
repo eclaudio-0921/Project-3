@@ -1,36 +1,39 @@
+var map;
 function initMap() {
-  var map = new google.maps.map(document.getElementById('map'), {
-    center: { lat: 41.95535438394767, lng: -87.72210225143667 },
-    zoom: 12,
+
+  map = new google.maps.Map(document.getElementById('map'), {
+    //center: {lat: 41.8741, lng: -87.6285}, 
+    center: {lat: 41.8784, lng: -87.6283},
+    zoom: 15
   });
 
-  var marker = new google.maps.Marker({
-    position: { lat: 41.95535438394767, lng: -87.72210225143667 },
-    map: map,
+  var school = new google.maps.Marker({
+    position: { lat: 41.8730, lng: -87.6279},
+    map: map
   });
 
-  var infowindow = new google.maps.InfoWindow({
-    content: "This is where I go to school!",
+  var reckless = new google.maps.Marker({
+    position: { lat: 41.882324790101684, lng: -87.62668825420475 },
+    map: map
   });
-  infowindow.open(map, marker);
 
-   const icons = {
-    gardencenter: {
-      icon: "media/download.jpg",
-    },
-  };
-
-  var features = [
-    { position: { lat: 41.95, lng: -87.72 }, type: "school front" },
+  var distPoints = [
+    { lat: 41.8730, lng: -87.6279 },
+    { lat: 41.882051955922336, lng: -87.62782201616926 },
+    { lat: 41.88206477020562, lng: -87.62670524486201 },
+    { lat: 41.882324790101684, lng: -87.62668825420475 },
   ];
 
-  for (let i = 0; i < features.length; i++) {
-    const marker = new google.maps.Marker({
-      position: features[i].position,
-      icon: icons[features[i].type].icon,
-      map: map,
-    });
-  }
+  var dist = new google.maps.Polyline({
+    path: distPoints,
+    geodesic: true,
+    strokeColor: "#FE5F55",
+    strokeOpacity: 1.0,
+    strokeWeight: 2,
+  });
+
+  dist.setMap(map);
+
 }
 
-google.maps.event.addDomListener(window, 'load', initMap);
+window.initMap = initMap;
