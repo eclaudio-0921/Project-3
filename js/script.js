@@ -10,7 +10,7 @@ function initMap() {
   });
 
   var infowindow = new google.maps.InfoWindow({
-    content: "This is where I work!",
+    content: "This is where I go to school!",
   });
 
 
