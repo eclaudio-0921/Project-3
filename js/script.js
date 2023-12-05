@@ -10,23 +10,13 @@ function initMap() {
   var school = new google.maps.Marker({
     position: { lat:  41.69030, lng: -87.71769},
     map: map
-    title: "Chicago Ag",
-	      icon: {
-    url:"media/5b4e0fe274509.image.jpg",
-	      scaledSize: new google.maps.Size(86,80),
-	},
-	animation: google.maps.Animation.DROP
+    icon: {url""},
   });
 
   var Midway = new google.maps.Marker({
     position: { lat: 41.78699, lng: -87.75224 },
     map: map
-    title: "Midway",
-	      icon: {
-    url:"media/38caab_eddba0af63cb4e5b8610cc76f57b735c~mv2.jpg",
-	      scaledSize: new google.maps.Size(86,80),
-	},
-	animation: google.maps.Animation.DROP
+    icon: {url""},
   });
 
   var distPoints = [
