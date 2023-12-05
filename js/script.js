@@ -22,3 +22,15 @@ function initMap() {
   ];
 
   var dist = new google.maps.Polyline({
+    path: distPoints,
+    geodesic: true,
+    strokeColor: "#FE5F55",
+    strokeOpacity: 1.0,
+    strokeWeight: 2,
+  });
+
+  dist.setMap(map);
+
+}
+
+window.initMap = initMap;
