@@ -13,28 +13,26 @@ const icons = {
       icon: "media/38caab_eddba0af63cb4e5b8610cc76f57b735c~mv2.jpg"
     }
   }
-  var school = new google.maps.Marker({
-    position: { lat:  41.69030, lng: -87.71769},
-    map: map
-  });
 
-  var Midway = new google.maps.Marker({
-    position: { lat: 41.78699, lng: -87.75224 },
-    map: map
-  });
+  
+const features = [
+    {
+      position: new google.maps.LatLng( 41.69030, -87.71769),
+      type: "ChicagoAg",
+    },
+{
+      position: new google.maps.LatLng( 41.78699, -87.75224),
+      type: "flacos",
+    }
+  ]
 
-  var distPoints = [
-    { lat: 41.69030, lng: -87.71769},
-    { lat: 41.78699, lng: -87.75224  },
-  ];
-
-  var dist = new google.maps.Polyline({
-    path: distPoints,
-    geodesic: true,
-    strokeColor: "#FE5F55",
-    strokeOpacity: 1.0,
-    strokeWeight: 2,
-  });
-  dist.setMap(map);
+ for (let i = 0; i < features.length; i++) {
+    const marker = new google.maps.Marker({
+      position: features[i].position,
+      icon: icons[features[i].type].icon,
+      map: map,
+    });
+  }
 }
-window.initMap = initMap;
+
+initMap();
