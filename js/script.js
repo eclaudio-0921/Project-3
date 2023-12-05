@@ -8,7 +8,7 @@ function initMap() {
 
   const icons = {
     ChicagoAg: {
-      icon: "media/thebudlong.png"
+      icon: "media/5b4e0fe274509.image.jpg"
     },
     Midway: {
       icon: "media/harolds.png"
