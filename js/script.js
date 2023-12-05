@@ -21,9 +21,9 @@ function initMap() {
   var Midway = new google.maps.Marker({
     position: { lat: 41.78699, lng: -87.75224 },
     map: map
-    title: "Marquette Park",
+    title: "Midway",
 	      icon: {
-    url:"media/marquette.png",
+    url:"media/38caab_eddba0af63cb4e5b8610cc76f57b735c~mv2.jpg",
 	      scaledSize: new google.maps.Size(86,80),
 	},
 	animation: google.maps.Animation.DROP
