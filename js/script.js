@@ -6,13 +6,10 @@ function initMap() {
     zoom: 15
   });
 const icons = {
-    budlong: {
-      icon: ""
+    ChicagoAg: {
+      icon: "media/5b4e0fe274509.image.jpg"
     },
     harolds: {
-      icon: ""
-    },
-    flacos: {
       icon: ""
     }
   }
