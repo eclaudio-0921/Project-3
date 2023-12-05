@@ -22,7 +22,7 @@ const features = [
     },
 {
       position: new google.maps.LatLng( 41.78699, -87.75224),
-      type: "flacos",
+      type: "Midway",
     }
   ]
 
