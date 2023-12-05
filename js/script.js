@@ -10,11 +10,23 @@ function initMap() {
   var school = new google.maps.Marker({
     position: { lat:  41.69030, lng: -87.71769},
     map: map
+    title: "Marquette Park",
+	      icon: {
+    url:"media/marquette.png",
+	      scaledSize: new google.maps.Size(86,80),
+	},
+	animation: google.maps.Animation.DROP
   });
 
   var Midway = new google.maps.Marker({
     position: { lat: 41.78699, lng: -87.75224 },
     map: map
+    title: "Marquette Park",
+	      icon: {
+    url:"media/marquette.png",
+	      scaledSize: new google.maps.Size(86,80),
+	},
+	animation: google.maps.Animation.DROP
   });
 
   var distPoints = [
