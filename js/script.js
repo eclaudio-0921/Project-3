@@ -10,9 +10,9 @@ function initMap() {
   var school = new google.maps.Marker({
     position: { lat:  41.69030, lng: -87.71769},
     map: map
-    title: "Marquette Park",
+    title: "Chicago Ag",
 	      icon: {
-    url:"media/marquette.png",
+    url:"media/5b4e0fe274509.image.jpg",
 	      scaledSize: new google.maps.Size(86,80),
 	},
 	animation: google.maps.Animation.DROP
