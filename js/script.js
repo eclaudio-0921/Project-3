@@ -11,7 +11,7 @@ function initMap() {
       icon: "media/5b4e0fe274509.image.jpg"
     },
     Midway: {
-      icon: "media/harolds.png"
+      icon: "media/38caab_eddba0af63cb4e5b8610cc76f57b735c~mv2.jpg"
     }  
   }
 
