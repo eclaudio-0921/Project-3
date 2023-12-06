@@ -6,7 +6,6 @@ function initMap() {
     zoom: 15
   });
   
-}
   var school = new google.maps.Marker({
     position: { lat:  41.69030, lng: -87.71769},
     map: map
