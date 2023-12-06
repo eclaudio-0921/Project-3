@@ -5,8 +5,8 @@ function initMap() {
     center: {lat: 41.6902, lng: -87.7176},
     zoom: 15
   });
- 
-var school = new google.maps.Marker({
+  
+  var school = new google.maps.Marker({
     position: { lat:  41.69030, lng: -87.71769},
     map: map
   });
@@ -34,3 +34,4 @@ var school = new google.maps.Marker({
   dist.setMap(map);
 }
 window.initMap = initMap;
+  
