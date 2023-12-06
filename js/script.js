@@ -5,7 +5,14 @@ function initMap() {
     center: {lat: 41.6902, lng: -87.7176},
     zoom: 15
   });
-  
+ 
+  icon: {
+url:"media/image.png"
+},
+  icon: {
+url:"media/image.png"
+},
+ 
   var school = new google.maps.Marker({
     position: { lat:  41.69030, lng: -87.71769},
     map: map
