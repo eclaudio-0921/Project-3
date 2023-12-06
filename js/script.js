@@ -10,7 +10,7 @@ function initMap() {
 url:"media/5b4e0fe274509.image.png"
 },
   icon: Midway {
-url:"media/image.png"
+url:"media/38caab_eddba0af63cb4e5b8610cc76f57b735c~mv2.png"
 },
  
   var school = new google.maps.Marker({
