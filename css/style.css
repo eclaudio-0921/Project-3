@@ -100,4 +100,13 @@ img {
   border-style: dotted;
   margin: 20px;
 }
+/* */
 
+@media (min-width: 480px) {
+Section{
+	font-size: 14px;
+}}
+@media (max-width:320px) {
+Section{
+	font-size: 14px;
+}}
