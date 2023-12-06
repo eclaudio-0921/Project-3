@@ -6,10 +6,10 @@ function initMap() {
     zoom: 15
   });
  
-  icon: {
-url:"media/image.png"
+  icon: school {
+url:"media/5b4e0fe274509.image.png"
 },
-  icon: {
+  icon: Midway {
 url:"media/image.png"
 },
  
