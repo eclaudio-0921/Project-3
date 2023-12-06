@@ -9,17 +9,11 @@ function initMap() {
 var school = new google.maps.Marker({
     position: { lat:  41.69030, lng: -87.71769},
     map: map
-  icon: school {
-  url:"media/5b4e0fe274509.image.png"
-  },
   });
 
   var Midway = new google.maps.Marker({
     position: { lat: 41.78699, lng: -87.75224 },
     map: map
-  icon: Midway {
-  url:"media/38caab_eddba0af63cb4e5b8610cc76f57b735c~mv2.png"
-  },
   });
 
   var distPoints = [
